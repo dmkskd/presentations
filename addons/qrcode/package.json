@@ -1,0 +1,9 @@
+{
+  "name": "slidev-addon-qrcode",
+  "version": "0.0.0",
+  "private": true,
+  "keywords": ["slidev-addon", "slidev"],
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

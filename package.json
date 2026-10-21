@@ -1,0 +1,20 @@
+{
+  "name": "presentations",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run.js dev",
+    "export": "node scripts/run.js export",
+    "build": "node scripts/build-all.js",
+    "new": "node scripts/new.js"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-addon-qrcode": "file:./addons/qrcode"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.48.0"
+  }
+}
