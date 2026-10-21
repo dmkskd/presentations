@@ -130,7 +130,7 @@ ul:not(li ul) > li:has(~ li:not(.slidev-vclick-hidden)) { opacity: 0.4; transiti
 
 - The problem
   - ClickHouse may be deployed using terraform
-  - Reviewing a terraform plan is always nerve wrecking
+  - Reviewing a terraform plan is always nerve wracking
   - Staring at a terraform plan diff is no fun
 - The idea
   - Can we make the terraform plan more visual?
