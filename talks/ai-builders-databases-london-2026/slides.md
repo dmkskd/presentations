@@ -68,16 +68,19 @@ ul:not(li ul) > li:has(~ li:not(.slidev-vclick-hidden)) { opacity: 0.4; transiti
 
 <v-clicks depth="2" class="text-lg">
 
-- Problem
-  - Monitoring ClickHouse
-  - teams are using the usual su
+- Problem: ClickHouse Monitoring
+  - teams are using Grafana and similar observability tools
+  - many dashboards, many graphs, but hard to go into the single query or event
   - let's ignore LLM agents for now
-- **The idea**
-  - What the tool does differently
-- **Demo**
-  - http://178.104.103.140
-- **Takeaways**
-  - The one thing to remember
+- The idea
+  - Let's build something tailored to our needs!
+  - We want to drill down into ClickHouse Primitives: queries, merges etc
+- Demo
+  - https://dmkskd.github.io/tracehouse/
+  - but what if we are already using Grafana? We won't move to another tool
+- Takeaways
+  - it's relatively easy to build the tool you need
+  - it may be possible to extend the tool you are already using (e.g. Grafana)
 
 </v-clicks>
 <style>
@@ -92,15 +95,16 @@ ul:not(li ul) > li:has(~ li:not(.slidev-vclick-hidden)) { opacity: 0.4; transiti
 <v-clicks depth="2" class="text-lg">
 
 - Problem
-  - what are the ClickHouse best practices 
-  - how can I communicate them to other team members
-  - 
+  - What are ClickHouse best practices, especially for ingestion?
+  -  How do I share ClickHouse patterns and decisions with my team?
 - **The idea**
-  - What the tool does differently
+  - A playground where you can try, copy and modify patterns
+  - Comes with agentic skills, so adding a new pattern has a low cost
 - **Demo**
   - https://github.com/dmkskd/clickhouse-patterns
 - **Takeaways**
-  - The one thing to remember
+  - Many ways to solve the same problem, each with its own trade-offs
+  - Make it easy to brainstorm, iterate on and communicate your architecture
 
 </v-clicks>
 <style>
@@ -125,6 +129,10 @@ ul:not(li ul) > li:has(~ li:not(.slidev-vclick-hidden)) { opacity: 0.4; transiti
 ---
 
 # Wrap Up
+
+- TraceHouse: https://github.com/dmkskd/tracehouse
+- ClickHouse Patterns: https://github.com/dmkskd/clickhouse-patterns
+- TFView: https://github.com/dmkskd/tf-view
 
 Questions?
 
